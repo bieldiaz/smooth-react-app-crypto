@@ -1,8 +1,8 @@
 import React from 'react'
-import { Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './NavBarElements'
+import { Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavBarElements'
 import { FaBars } from 'react-icons/fa'
 
-const NavBar = () => {
+const NavBar = ({ toggle }) => {
     return (
         <>
             <Nav>
@@ -10,14 +10,26 @@ const NavBar = () => {
                     <NavLogo to="/">
                         crypto
                     </NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about"></NavLinks>
+                            <NavLinks to="about">About</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="discover">Discover</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="services">Services</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="signup">Sign Up</NavLinks>
                         </NavItem>
                     </NavMenu>
+                    <NavBtn>
+                        <NavBtnLink to="/signin">Sign In</NavBtnLink>
+                    </NavBtn>
                 </NavBarContainer>
             </Nav>
         </>

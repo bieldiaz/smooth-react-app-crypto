@@ -6,33 +6,32 @@ import { Link as LinkScroll } from 'react-router-dom'
 export const Nav = styled.nav`
     background:#000;
     height: 80px;
-   
     display:flex:
     justify-content:center;
     align-items:center;
     font-size: 1rem;
-    position:sticky;
+    position: sticky;
     top:0;
     z-index:10;
 
     @media screen and (max-width:960px){
         transition: 0.8s all ease;
     }
-`
+`;
 
 export const NavBarContainer = styled.div`
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     height: 80px;
     z-index:1;
     width:100%;
     padding: 0 24px;
     max-width:1100px;
-`
+`;
 
 export const NavLogo = styled(LinkRouter)`
-    color:#fff;
-    justify-self:flex-start;
+    color:white;
+    justify-self: flex-start;
     cursor:pointer;
     font-size:1.5rem;
     display:flex;
@@ -40,7 +39,7 @@ export const NavLogo = styled(LinkRouter)`
     margin-left:24px;
     font-weight:bold;
     text-decoration:none;
-`
+`;
 
 export const MobileIcon = styled.div`
     display:none;
@@ -49,12 +48,12 @@ export const MobileIcon = styled.div`
         position:absolute;
         top:0;
         right:0;
-        transform:(translate(-100% , 60%));
-        font-size:1.8rem;
+        transform:translate(-100% , 60%);
+        font-size: 1.8rem;
         cursor:pointer;
-    
+        color:white;
     }
-`
+`;
 export const NavMenu = styled.ul`
     display:flex;
     align-items:center;
@@ -65,14 +64,14 @@ export const NavMenu = styled.ul`
     @media screen and (max-width:768px){
         display:none;
     }
-`
+`;
 
-export const NavItem = styled.ul`
+export const NavItem = styled.li`
     height:80px;
-`
+`;
 
 export const NavLinks = styled(LinkScroll)`
-    color:white;
+    color:#fff;
     display:flex;
     align-items:center;
     text-decoration:none;
@@ -80,7 +79,37 @@ export const NavLinks = styled(LinkScroll)`
     height:100%;
     cursor:pointer;
     &.active{
-        border-bottom: 3px solid #1bf71;
+        border-bottom: 3px solid #01bf71;
     }
-`
+`;
+
+export const NavBtn = styled.nav`
+    display:flex;
+    align-items:center;
+    @media screen and (max-width:768px){
+        display:none;
+
+    }
+
+`;
+
+export const NavBtnLink = styled(LinkRouter)`
+    border-radius:50px;
+    background: #01bf71;
+    white-space:nowrap;
+    padding: 10px 22px;
+    color #010606;
+    font-size:16px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    transition: all 0.2 ease-in-out;
+    text-decoration:none;
+
+    &:hover{
+        transition: all 0.2 ease-in-out;
+        background: #fff;
+        color #010606;
+    }   
+`;
 
