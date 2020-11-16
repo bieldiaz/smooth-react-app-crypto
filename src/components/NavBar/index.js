@@ -70,7 +70,7 @@ const NavBar = ({ toggle }) => {
                                 spy={true}
                                 exact='true'
                                 offset={-80}
-                            >Sign Up</NavLinks>
+                            >Sign up</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
