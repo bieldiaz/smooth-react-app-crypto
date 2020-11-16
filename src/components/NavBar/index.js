@@ -64,13 +64,13 @@ const NavBar = ({ toggle }) => {
                         </NavItem>
                         <NavItem>
                             <NavLinks
-                                to="signup"
+                                to="sign up"
                                 smooth={true}
                                 duration={500}
                                 spy={true}
                                 exact='true'
                                 offset={-80}
-                            >Sign up</NavLinks>
+                            >Start Now</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>

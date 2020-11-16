@@ -30,7 +30,18 @@ const HeroSection = () => {
                 <Heroh1>Crypto Virtual Company </Heroh1>
                 <HeroP>Sign up for a new account</HeroP>
                 <HeroBtnWrapper>
-                    <Button onMouseEnter={onHover} onMouseLeave={onHover} to="signup" primary="true" dark="true"> Get Started! {hover ? <ArrowForward /> : <ArrowRight />} </Button>
+                    <Button
+                        onMouseEnter={onHover}
+                        onMouseLeave={onHover}
+                        to="sign up"
+                        primary="true"
+                        dark="true"
+                        smooth={true}
+                        duration={1000}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                    > Get Started! {hover ? <ArrowForward /> : <ArrowRight />} </Button>
                 </HeroBtnWrapper>
             </HeroContent>
 
