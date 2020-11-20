@@ -8,7 +8,7 @@ export const HeroContainer = styled.div`
     justify-content:center;
     align-items:center;
     padding: 0 30px;
-    height: 800px;
+    height: 95vh;
     position:relative;
     z-index: 1;
     :before{
@@ -42,6 +42,7 @@ export const VideoBg = styled.video`
     -o-object-fit: cover;
     object-fit:cover;
     background: #232a34;
+    
 `;
 
 export const HeroContent = styled.div`

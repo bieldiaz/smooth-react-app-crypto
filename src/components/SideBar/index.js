@@ -10,6 +10,7 @@ import {
     SidebarRoute,
 } from './SideBarElements'
 
+
 const SideBar = ({ isOpen, toggle }) => {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -18,22 +19,45 @@ const SideBar = ({ isOpen, toggle }) => {
             </Icon>
             <SiderbarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="services"
+                    <SidebarLink
+                        to='about'
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        onClick={toggle}
+                    >
+                        About
+                    </SidebarLink>
+                    <SidebarLink
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        to="discover"
+                        onClick={toggle}>
+                        Discover
+                    </SidebarLink>
+                    <SidebarLink
+                        to="services"
                         smooth={true}
                         duration={500}
                         spy={true}
                         exact='true'
                         offset={-80}
                         onClick={toggle}>
-                        About
-                    </SidebarLink>
-                    <SidebarLink to="discover" onClick={toggle}>
-                        Discover
-                    </SidebarLink>
-                    <SidebarLink to="services" onClick={toggle}>
                         Services
                     </SidebarLink>
-                    <SidebarLink to="signup" onClick={toggle}>
+                    <SidebarLink
+                        to="sign up"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        onClick={toggle}>
                         Sign Up
                     </SidebarLink>
                 </SidebarMenu>
